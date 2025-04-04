@@ -73,4 +73,7 @@ start the development server: http://localhost:3000
 ```bash
 cd frontend
 npm run dev
+
+cd backend
+poetry run uvicorn app.main:app --reload
 ```
