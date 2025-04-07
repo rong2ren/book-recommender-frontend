@@ -34,10 +34,10 @@ export default function BookCard({ book }: { book: Book }) {
         </h3>
 
         <p className="text-gray-700 dark:text-gray-300 mb-3 italic">
-          by {book.author}
+          by {book.authors}
         </p>
 
-        <StarRating rating={book.rating} />
+        <StarRating rating={book.average_rating} />
 
         {book.description && (
           <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-3 mt-3 mb-3">
@@ -49,10 +49,10 @@ export default function BookCard({ book }: { book: Book }) {
           <span className="text-sm text-gray-600 dark:text-gray-400">
             {book.publish_year}
           </span>
-          
-          {book.page_count && (
+
+          {book.num_pages && (
             <span className="text-sm text-gray-600 dark:text-gray-400">
-              {book.page_count} pages
+              {book.num_pages} pages
             </span>
           )}
         </div>
