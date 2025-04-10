@@ -1,19 +1,21 @@
 export interface Book {
   id: string
+  isbn: string
   title: string
   authors: string
-  average_rating?: number
-  isbn?: string
-  isbn13?: string
-  language_code?: string
-  num_pages?: number
-  publisher?: string
-  publish_year?: number
-  description?: string
-  genre?: string
-  cover_url?: string
-  similarity?: number
-  tags?: string[]
+  description: string
+  cover_url: string
+  genres: string[]
+  num_pages: number
+  primary_genre: string
+  created_at: string
+  isbn13: string
+  language_code: string
+  embedding: string
+  average_rating: number
+  publication_date: string
+  ratings_count: number
+  publisher: string
 }
 
 export interface RecommendationRequest {
